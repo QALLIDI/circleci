@@ -27,4 +27,9 @@ public class QuoteController {
         quoteRepository.save(q);
         return "Saved";
     }
+
+    @GetMapping(path="/login")
+    public String loginQuote () {
+        return "login";
+    }
 }
