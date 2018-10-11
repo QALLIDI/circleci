@@ -23,7 +23,7 @@ public class QuoteController {
     @GetMapping(path="/add")
     public @ResponseBody String addNewQuote (@RequestParam String quote) {
         Quote q = new Quote();
-        q.setQuote("New Quote");
+        q.setQuote("Deploiment Continue Demo");
         quoteRepository.save(q);
         return "Saved";
     }
